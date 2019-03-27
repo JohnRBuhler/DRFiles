@@ -79,8 +79,8 @@ Function ZTIProcess()
 	'sSetupFile2005x64 = oUtility.ScriptDir & "\Source\VC2005\vcredist_x64.exe"
 	'//
 	'// Removed Visual C++ 2008 since it's no longer supported (and don't get security updates)
-	'sSetupFile2008x86 = oUtility.ScriptDir & "\Source\VC2005\vcredist_x86.exe"
-	'sSetupFile2008x64 = oUtility.ScriptDir & "\Source\VC2005\vcredist_x64.exe"
+	'sSetupFile2008x86 = oUtility.ScriptDir & "\Source\VC2008\vcredist_x86.exe"
+	'sSetupFile2008x64 = oUtility.ScriptDir & "\Source\VC2008\vcredist_x64.exe"
 	'//
 	sSetupFile2010x86 = oUtility.ScriptDir & "\Source\VS2010\vcredist_x86.exe"
 	sSetupFile2010x64 = oUtility.ScriptDir & "\Source\VS2010\vcredist_x64.exe"
@@ -108,7 +108,7 @@ Function ZTIProcess()
 	
 	'// Removed Visual C++ 2008 since it's no longer supported (and don't get security updates)
 	'If not oFSO.FileExists(sSetupFile2008x86) then
-	'	oLogging.CreateEntry oUtility.ScriptName & ": " & sSetupFile2005x86 & " was not found, unable to install", LogTypeError
+	'	oLogging.CreateEntry oUtility.ScriptName & ": " & sSetupFile2008x86 & " was not found, unable to install", LogTypeError
 	'	ZTIProcess = Failure
 	' 	Exit Function
 	'End if
